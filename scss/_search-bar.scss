@@ -1,0 +1,29 @@
+.search-input{
+    width: 80%;
+    display: inline-block;
+    padding: 0 .5rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    box-shadow: none;
+    font-family: "steelfish";
+    letter-spacing: 2px;    
+    border-style: none;
+    border-top:solid grey 1px;
+    border-left:solid grey 1px;
+    border-right:solid grey 1px;
+    transition: background .5s ease;
+    margin-bottom: 1.2rem;
+    &:focus{
+        background: #E7E1DA;
+        border-bottom: solid tomato 5px;
+        outline: none;
+    }
+}
+@media only screen and (min-width: 600px){
+    .search-input{
+        width: 55%;
+        height: 4rem;
+        font-size: 2rem;
+    }
+}

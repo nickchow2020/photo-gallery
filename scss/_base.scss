@@ -1,0 +1,106 @@
+/************
+ @font-face
+*************/
+@font-face{
+    font-family: "Garden Sans";
+    src:url("../fonts/Garden Sans.ttf");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face{
+    font-family: "steelfish";
+    src: url("../fonts/steelfish rg.ttf");
+    font-style: normal;
+    font-weight: 600;
+}
+/************
+Base Style
+*************/
+*{
+  box-sizing: border-box;
+}
+h1{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/************
+Header Style
+*************/
+.header{
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    border-bottom: solid tomato 2px;
+}
+.header h1{
+    font-family: "Garden Sans";
+    font-size: 3.5rem;
+    text-shadow: 1px 2px 3px tomato;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+}
+@media only screen and (min-width: 600px){
+    .header{
+        width: 80%;
+        margin: auto;
+        max-width: 1200px;
+    }
+}
+/**********************
+   photo-gallery Layout
+***********************/
+#photo-gallery a{
+ display: inline-block;
+ margin: 10px;
+}
+#photo-gallery{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+@media only screen and (min-width: 600px){
+    #photo-gallery{
+        width: 80%;
+        margin: 1rem auto;
+        max-width: 1200px;
+        display: grid;  
+        grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+        a{
+            margin: 25px;
+        }
+    }
+}
+
+/**********************
+   Footer Layout
+***********************/
+.footer{
+    width: 95%;
+    margin: auto;
+    border-top: solid tomato 2px;
+    text-align: center;
+    padding: 1rem 0;
+}
+@media only screen and (min-width: 600px){
+.footer{
+    width: 80%;
+    margin: auto;
+}
+}
+/******************
+*****Sticky Footer
+*******************/
+.wrap{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1424px;
+    margin: auto;
+}
+.footer{
+    margin-top: auto;
+}

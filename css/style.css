@@ -1,0 +1,187 @@
+/************
+ @font-face
+*************/
+@font-face {
+  font-family: "Garden Sans";
+  src: url("../fonts/Garden Sans.ttf");
+  font-style: normal;
+  font-weight: 600; }
+@font-face {
+  font-family: "steelfish";
+  src: url("../fonts/steelfish rg.ttf");
+  font-style: normal;
+  font-weight: 600; }
+/************
+Base Style
+*************/
+* {
+  box-sizing: border-box; }
+
+h1 {
+  padding: 0;
+  margin: 0; }
+
+/************
+Header Style
+*************/
+.header {
+  text-align: center;
+  width: 95%;
+  margin: auto;
+  border-bottom: solid tomato 2px; }
+
+.header h1 {
+  font-family: "Garden Sans";
+  font-size: 3.5rem;
+  text-shadow: 1px 2px 3px tomato;
+  margin-top: 1.5rem;
+  margin-bottom: .5rem; }
+
+@media only screen and (min-width: 600px) {
+  .header {
+    width: 80%;
+    margin: auto;
+    max-width: 1200px; } }
+/**********************
+   photo-gallery Layout
+***********************/
+#photo-gallery a {
+  display: inline-block;
+  margin: 10px; }
+
+#photo-gallery {
+  width: 50%;
+  margin: auto;
+  text-align: center; }
+
+@media only screen and (min-width: 600px) {
+  #photo-gallery {
+    width: 80%;
+    margin: 1rem auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    #photo-gallery a {
+      margin: 25px; } }
+/**********************
+   Footer Layout
+***********************/
+.footer {
+  width: 95%;
+  margin: auto;
+  border-top: solid tomato 2px;
+  text-align: center;
+  padding: 1rem 0; }
+
+@media only screen and (min-width: 600px) {
+  .footer {
+    width: 80%;
+    margin: auto; } }
+/******************
+*****Sticky Footer
+*******************/
+.wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1424px;
+  margin: auto; }
+
+.footer {
+  margin-top: auto; }
+
+.search-input {
+  width: 80%;
+  display: inline-block;
+  padding: 0 .5rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  box-shadow: none;
+  font-family: "steelfish";
+  letter-spacing: 2px;
+  border-style: none;
+  border-top: solid grey 1px;
+  border-left: solid grey 1px;
+  border-right: solid grey 1px;
+  transition: background .5s ease;
+  margin-bottom: 1.2rem; }
+  .search-input:focus {
+    background: #E7E1DA;
+    border-bottom: solid tomato 5px;
+    outline: none; }
+
+@media only screen and (min-width: 600px) {
+  .search-input {
+    width: 55%;
+    height: 4rem;
+    font-size: 2rem; } }
+/*** *****************
+Plugin Style
+**********************/
+.lg-outer .lg-toogle-thumb:after {
+  display: none; }
+
+.lg-sub-html h4 {
+  color: #47e3ff; }
+
+.lg-actions .lg-next, .lg-actions .lg-prev {
+  background-color: transparent; }
+
+.lg-actions .lg-next,
+.lg-actions .lg-prev {
+  font-size: 40px; }
+  .lg-actions .lg-next:hover,
+  .lg-actions .lg-prev:hover {
+    color: tomato; }
+
+.lg-toolbar .lg-download,
+.lg-autoplay-button,
+.lg-fullscreen,
+#lg-zoom-in,
+#lg-zoom-out,
+#lg-actual-size,
+.lg-outer #lg-share,
+#lg-counter {
+  display: none; }
+
+.lg-toolbar .lg-close {
+  padding-right: 50%;
+  font-size: 3rem;
+  padding-top: 2rem; }
+
+.lg-sub-html h4 {
+  font-size: 33px;
+  color: #47e3ff; }
+
+.lg-sub-html p {
+  font-size: 1.3rem; }
+
+@media only screen and (min-width: 600px) {
+  .lg-actions .lg-next,
+  .lg-actions .lg-prev {
+    font-size: 80px; }
+
+  .lg-sub-html p {
+    font-size: 23px;
+    font-size: 1.5rem;
+    color: white; }
+
+  .lg-actions .lg-prev {
+    left: 40px; }
+
+  .lg-actions .lg-next {
+    right: 40px; }
+
+  .lg-toolbar .lg-close {
+    font-size: 4rem;
+    padding-top: 1rem; }
+
+  .lg-outer .lg-toogle-thumb:after {
+    display: block; }
+
+  .lg-outer .lg-image {
+    max-height: 75%;
+    max-width: 80%; } }
+
+/*# sourceMappingURL=style.css.map */
